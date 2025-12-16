@@ -1,4 +1,6 @@
 import React from 'react';
+import IconHuggingFace from './huggingface';
+import IconLeetCode from './leetcode';
 import PropTypes from 'prop-types';
 import {
   IconAppStore,
@@ -47,6 +49,10 @@ const Icon = ({ name }) => {
       return <IconStar />;
     case 'Twitter':
       return <IconTwitter />;
+      case 'HuggingFace':
+      return <IconHuggingFace />;
+    case 'LeetCode':
+      return <IconLeetCode />;
     default:
       return <IconExternal />;
   }

@@ -3,7 +3,7 @@ date: '2025-12-15'
 title: 'Document Classifier '
 cover: './demo.png'
 github: 'https://huggingface.co/arpit-gour02/document-classification/tree/main'
-external: 'https://huggingface.co/arpit-gour02/document-classification'
+external: 'https://huggingface.co/spaces/arpit-gour02/document-classification-demo'
 tech:
   - PyTorch
   - ResNet-50
