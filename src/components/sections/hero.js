@@ -8,9 +8,9 @@ const StyledHeroSection = styled.section`
   ${({ theme }) => theme.mixins.flexCenter};
   flex-direction: column;
   align-items: flex-start;
-  min-height: 100vh;
-  height: 100vh;
-  padding: 0;
+  min-height: auto;
+  // height: 80vh;
+  padding: 300px 0 162px; /* Add padding so it doesn't hit the navbar */  
 
   @media (max-height: 700px) and (min-width: 700px), (max-width: 360px) {
     height: auto;
