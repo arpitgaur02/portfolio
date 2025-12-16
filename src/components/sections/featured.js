@@ -39,62 +39,15 @@ const StyledProject = styled.li`
     }
   }
 
-  &:nth-of-type(odd) {
-    .project-content {
-      grid-column: 7 / -1;
-      text-align: right;
-
-      @media (max-width: 1080px) {
-        grid-column: 5 / -1;
-      }
-      @media (max-width: 768px) {
-        grid-column: 1 / -1;
-        padding: 40px 40px 30px;
-        text-align: left;
-      }
-      @media (max-width: 480px) {
-        padding: 25px 25px 20px;
-      }
-    }
-    .project-tech-list {
-      justify-content: flex-end;
-
-      @media (max-width: 768px) {
-        justify-content: flex-start;
-      }
-
-      li {
-        margin: 0 0 5px 20px;
-
-        @media (max-width: 768px) {
-          margin: 0 10px 5px 0;
-        }
-      }
-    }
-    .project-links {
-      justify-content: flex-end;
-      margin-left: 0;
-      margin-right: -10px;
-
-      @media (max-width: 768px) {
-        justify-content: flex-start;
-        margin-left: -10px;
-        margin-right: 0;
-      }
-    }
-    .project-image {
-      grid-column: 1 / 8;
-
-      @media (max-width: 768px) {
-        grid-column: 1 / -1;
-      }
-    }
-  }
+  /* -------------------------------------------------- */
+  /* ALIGNMENT FIX: Force Content LEFT, Image RIGHT    */
+  /* -------------------------------------------------- */
 
   .project-content {
     position: relative;
-    grid-column: 1 / 7;
+    grid-column: 1 / 7; /* Content takes left half */
     grid-row: 1 / -1;
+    text-align: left;   /* Text is always left-aligned */
 
     @media (max-width: 1080px) {
       grid-column: 1 / 9;
@@ -133,10 +86,8 @@ const StyledProject = styled.li`
 
     @media (max-width: 768px) {
       color: var(--white);
-
       a {
         position: static;
-
         &:before {
           content: '';
           display: block;
@@ -165,7 +116,6 @@ const StyledProject = styled.li`
       padding: 20px 0;
       background-color: transparent;
       box-shadow: none;
-
       &:hover {
         box-shadow: none;
       }
@@ -189,6 +139,7 @@ const StyledProject = styled.li`
     margin: 25px 0 10px;
     padding: 0;
     list-style: none;
+    justify-content: flex-start; /* List always starts on left */
 
     li {
       margin: 0 20px 5px 0;
@@ -200,7 +151,6 @@ const StyledProject = styled.li`
 
     @media (max-width: 768px) {
       margin: 10px 0;
-
       li {
         margin: 0 10px 5px 0;
         color: var(--lightest-slate);
@@ -215,11 +165,11 @@ const StyledProject = styled.li`
     margin-top: 10px;
     margin-left: -10px;
     color: var(--lightest-slate);
+    justify-content: flex-start; /* Links always start on left */
 
     a {
       ${({ theme }) => theme.mixins.flexCenter};
       padding: 10px;
-
       &.external {
         svg {
           width: 22px;
@@ -227,22 +177,16 @@ const StyledProject = styled.li`
           margin-top: -4px;
         }
       }
-
       svg {
         width: 20px;
         height: 20px;
       }
     }
-
-    .cta {
-      ${({ theme }) => theme.mixins.smallButton};
-      margin: 10px;
-    }
   }
 
   .project-image {
     ${({ theme }) => theme.mixins.boxShadow};
-    grid-column: 6 / -1;
+    grid-column: 6 / -1; /* Image takes right half */
     grid-row: 1 / -1;
     position: relative;
     z-index: 1;
@@ -264,7 +208,6 @@ const StyledProject = styled.li`
       &:focus {
         background: transparent;
         outline: 0;
-
         &:before,
         .img {
           background: transparent;
@@ -302,7 +245,6 @@ const StyledProject = styled.li`
     }
   }
 `;
-
 const Featured = () => {
   const data = useStaticQuery(graphql`
     {
@@ -322,7 +264,6 @@ const Featured = () => {
               tech
               github
               external
-              cta
             }
             html
           }
@@ -348,7 +289,7 @@ const Featured = () => {
   return (
     <section id="projects">
       <h2 className="numbered-heading" ref={revealTitle}>
-        Some Things I’ve Built
+        Featured Projects
       </h2>
 
       <StyledProjectsGrid>
@@ -362,7 +303,7 @@ const Featured = () => {
               <StyledProject key={i} ref={el => (revealProjects.current[i] = el)}>
                 <div className="project-content">
                   <div>
-                    <p className="project-overline">Featured Project</p>
+                    <p className="project-overline">Projects</p>
 
                     <h3 className="project-title">
                       <a href={external}>{title}</a>
@@ -382,11 +323,11 @@ const Featured = () => {
                     )}
 
                     <div className="project-links">
-                      {cta && (
+                      {/* {cta && (
                         <a href={cta} aria-label="Course Link" className="cta">
                           Learn More
                         </a>
-                      )}
+                      )} */}
                       {github && (
                         <a href={github} aria-label="GitHub Link">
                           <Icon name="GitHub" />
