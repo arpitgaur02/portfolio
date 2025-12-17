@@ -7,7 +7,7 @@ tech:
   - Multivariate Calculus
   - Pytho
   - Matplotlib
-company: 'Zoho'
+company: 'Zoho Schools'
 showInProjects: true
 ---
 

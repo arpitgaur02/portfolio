@@ -136,8 +136,7 @@ const skills = ['Python', 'PyTorch', 'Numpy', 'Pandas', 'Matplotlib & Seaborn', 
           <div>
         <p>
           Hello! My name is Arpit, and I enjoy building machine learning systems that can see and understand the world.
-          My interest in machine learning began when I joined
-          <a href="https://www.zohoschools.com/">Zoho School of Advanced Study</a>,
+          My interest in machine learning began when I joined <a href="https://www.zohoschools.com/">Zoho School of Advanced Study</a>,
           where I learned how to build neural networks from scratch and develop strong fundamentals in deep learning.
         </p>
 
