@@ -134,23 +134,19 @@ const skills = ['Python', 'PyTorch', 'Numpy', 'Pandas', 'Matplotlib & Seaborn', 
       <div className="inner">
         <StyledText>
           <div>
-            <p>
-              Hello! My name is Arpit and I enjoy building intelligent systems that can see and understand the world. 
-              My interest in AI started when I joined <a href="https://www.zohoschools.com/">Zoho School of Advanced Study</a>,
-              where I learned how to build neural networks from scratch.
-            </p>
+        <p>
+          Hello! My name is Arpit, and I enjoy building machine learning systems that can see and understand the world.
+          My interest in machine learning began when I joined
+          <a href="https://www.zohoschools.com/">Zoho School of Advanced Study</a>,
+          where I learned how to build neural networks from scratch and develop strong fundamentals in deep learning.
+        </p>
 
-            <p>
-              Fast-forward to today, and I’ve had the privilege of working on AI Models {' '}and
-              exploring state-of-the-art architectures like ResNet.
-              {/* <a href="https://us.mullenlowe.com/">an advertising agency</a>,{' '}
-              <a href="https://starry.com/">a start-up</a>,{' '}
-              <a href="https://www.apple.com/">a huge corporation</a>, and{' '}
-              <a href="https://scout.camd.northeastern.edu/">a student-led design studio</a>. 
-              My main focus these days is building accessible,  */}
-              My main focus these days is building accessible, efficient deep learning models for real-world applications.
-
-            </p>
+<p>
+  Over time, I have worked on multiple machine learning models and explored modern deep learning architectures
+  such as ResNet, focusing on understanding their design and optimization challenges.
+  My current focus is on building efficient and accessible machine learning models
+  for real-world applications.
+</p>
 
             {/* <p>
               I also recently{' '}

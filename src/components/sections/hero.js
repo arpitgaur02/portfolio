@@ -65,9 +65,11 @@ const Hero = () => {
   const four = (
     <>
       <p>
-        I’m a  AI researcher student at Zoho School of Advanced Study.
+        Focused on building machine learning models from scratch and deeply understanding how they work internally.
+
+        {/* I’m a  AI researcher student at Zoho School of Advanced Study.
         Currently, I’m focused on building AI systems using PyTorch
-        and exploring deep learning architectures.{" "}
+        and exploring deep learning architectures.{" "} */}
         {/* <a href="https://upstatement.com/" target="_blank" rel="noreferrer">
           Upstatement
         </a> */}
