@@ -4,10 +4,10 @@ module.exports = {
   siteMetadata: {
     title: 'Arpit Gaur',
     description:
-      'Arpit is an AI Researcher and Engineer specializing in Deep Learning and Computer Vision.', // <--- Update this too.',
+      'Arpit | ML Practitioner',
     siteUrl: 'https://brittanychiang.com', // No trailing slash allowed!
-    image: '/og.png', // Path to your image you placed in the 'static' folder
-    twitterUsername: '@bchiang7',
+    image: '/image.png', // Path to your image you placed in the 'static' folder
+    twitterUsername: '@ArpitGa29210424',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -20,13 +20,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Brittany Chiang',
-        short_name: 'Brittany Chiang',
+        name: 'Arpit Gaur',
+        short_name: 'Arpit Gaur',
         start_url: '/',
         background_color: config.colors.darkNavy,
         theme_color: config.colors.navy,
         display: 'minimal-ui',
-        icon: 'src/images/logo.png',
+        icon: 'src/images/image.png',
       },
     },
     `gatsby-plugin-offline`,
