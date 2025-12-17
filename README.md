@@ -20,10 +20,6 @@ I customized this site to showcase my work in **Deep Learning**, **Computer Visi
 
 
 
-   This website is customized from the v4 template created by Brittany Chiang.
 
 ## CREDITS
-**Why this matters**
-* **It shows ownership:** It proves you understand the code you are hosting.
-* **It respects the license:** Keeping the "Credits" section is the professional way to use open-source templates.
-* **It looks clean:** When you pin this repo to your GitHub profile, the preview will look professional.
+   This website is customized from the v4 template created by Brittany Chiang.
