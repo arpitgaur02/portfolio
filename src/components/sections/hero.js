@@ -16,7 +16,9 @@ const StyledHeroSection = styled.section`
     height: auto;
     // padding-top: var(--nav-height);
   }
-
+  .big-heading-2{
+    color: var(--slate);
+  }
   h1 {
     margin: 0 0 30px 4px;
     color: var(--green);
@@ -33,6 +35,7 @@ const StyledHeroSection = styled.section`
     margin-top: 5px;
     color: var(--slate);
     line-height: 0.9;
+    font-size: 5
   }
 
   p {
@@ -59,9 +62,9 @@ const Hero = () => {
     return () => clearTimeout(timeout);
   }, []);
 
-  const one = <h1>Hi, my name is</h1>;
-  const two = <h2 className="big-heading">Arpit Gaur.</h2>;
-  const three = <h3 className="big-heading">ML Practitioner.</h3>;
+  const one = <h1></h1>;
+  const two = <h2 className="big-heading">Arpit Gaur</h2>;
+  const three = <h2 className="big-heading-2">ML Practitioner</h2>;
   const four = (
     <>
       <p>
