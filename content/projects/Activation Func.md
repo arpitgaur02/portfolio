@@ -5,7 +5,7 @@ github: ''
 external: ''
 tech:
   - Multivariate Calculus
-  - Pytho
+  - Python
   - Matplotlib
 company: 'Zoho Schools'
 showInProjects: true
