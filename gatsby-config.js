@@ -5,7 +5,7 @@ module.exports = {
     title: 'Arpit Gaur',
     description:
       'Arpit | ML Practitioner',
-    siteUrl: 'https://brittanychiang.com', // No trailing slash allowed!
+    siteUrl: 'https://arpit-gaur.vercel.app/', // No trailing slash allowed!
     image: '/image.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@ArpitGa29210424',
   },
