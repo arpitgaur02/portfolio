@@ -10,7 +10,7 @@ const StyledHeroSection = styled.section`
   align-items: flex-start;
   min-height: auto;
   // height: 80vh;
-  padding: 300px 0 162px; /* Add padding so it doesn't hit the navbar */  
+  padding: 200px 0 162px; /* Add padding so it doesn't hit the navbar */  
 
   @media (max-height: 700px) and (min-width: 700px), (max-width: 360px) {
     height: auto;
