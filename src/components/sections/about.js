@@ -1,3 +1,187 @@
+// import React, { useEffect, useRef } from 'react';
+// import { StaticImage } from 'gatsby-plugin-image';
+// import styled from 'styled-components';
+// import { srConfig } from '@config';
+// import sr from '@utils/sr';
+// import { usePrefersReducedMotion } from '@hooks';
+
+// const StyledAboutSection = styled.section`
+//   max-width: 900px;
+
+//   .inner {
+//     display: grid;
+//     grid-template-columns: 3fr 2fr;
+//     grid-gap: 50px;
+
+//     @media (max-width: 768px) {
+//       display: block;
+//     }
+//   }
+// `;
+// const StyledText = styled.div`
+//   ul.skills-list {
+//     display: grid;
+//     grid-template-columns: repeat(2, minmax(140px, 200px));
+//     grid-gap: 0 10px;
+//     padding: 0;
+//     margin: 20px 0 0 0;
+//     overflow: hidden;
+//     list-style: none;
+
+//     li {
+//       position: relative;
+//       margin-bottom: 10px;
+//       padding-left: 20px;
+//       font-family: var(--font-mono);
+//       font-size: var(--fz-xs);
+
+//       &:before {
+//         content: '▹';
+//         position: absolute;
+//         left: 0;
+//         color: var(--green);
+//         font-size: var(--fz-sm);
+//         line-height: 12px;
+//       }
+//     }
+//   }
+// `;
+// const StyledPic = styled.div`
+//   position: relative;
+//   max-width: 300px;
+
+//   @media (max-width: 768px) {
+//     margin: 50px auto 0;
+//     width: 70%;
+//   }
+
+//   .wrapper {
+//     ${({ theme }) => theme.mixins.boxShadow};
+//     display: block;
+//     position: relative;
+//     width: 100%;
+//     border-radius: var(--border-radius);
+//     background-color: var(--green);
+
+//     &:hover,
+//     &:focus {
+//       outline: 0;
+//       transform: translate(-4px, -4px);
+
+//       &:after {
+//         transform: translate(8px, 8px);
+//       }
+
+//       .img {
+//         filter: none;
+//         mix-blend-mode: normal;
+//       }
+//     }
+
+//     .img {
+//       position: relative;
+//       border-radius: var(--border-radius);
+//       mix-blend-mode: multiply;
+//       filter: grayscale(100%) contrast(1);
+//       transition: var(--transition);
+//     }
+
+//     &:before,
+//     &:after {
+//       content: '';
+//       display: block;
+//       position: absolute;
+//       width: 100%;
+//       height: 100%;
+//       border-radius: var(--border-radius);
+//       transition: var(--transition);
+//     }
+
+//     &:before {
+//       top: 0;
+//       left: 0;
+//       background-color: var(--navy);
+//       mix-blend-mode: screen;
+//     }
+
+//     &:after {
+//       border: 2px solid var(--green);
+//       top: 14px;
+//       left: 14px;
+//       z-index: -1;
+//     }
+//   }
+// `;
+
+// const About = () => {
+//   const revealContainer = useRef(null);
+//   const prefersReducedMotion = usePrefersReducedMotion();
+
+//   useEffect(() => {
+//     if (prefersReducedMotion) {
+//       return;
+//     }
+
+//     sr.reveal(revealContainer.current, srConfig());
+//   }, []);
+
+// const skills = ['Python', 'PyTorch', 'Numpy', 'Pandas', 'Matplotlib & Seaborn', 'Git & Linux', "JupyterLab", "Conda & Pip",];
+
+//   return (
+//     <StyledAboutSection id="about" ref={revealContainer}>
+//       <h2 className="numbered-heading">About Me</h2>
+
+//       <div className="inner">
+//         <StyledText>
+//           <div>
+//         <p>
+//           Hello! I'm Arpit, and I enjoy building machine learning systems that can see and understand the world.
+//           My interest in machine learning began when I joined <a href="https://www.zohoschools.com/">Zoho School of Advanced Study</a>,
+//           where I learned how to build neural networks from scratch and develop strong fundamentals in deep learning.
+//         </p>
+
+//         <p>
+//           Over time, I have worked on multiple machine learning models and explored modern deep learning architectures
+//           such as ResNet, focusing on understanding their design and optimization challenges.
+//           My current focus is on building efficient and accessible machine learning models
+//           for real-world applications.
+//         </p>
+
+//             {/* <p>
+//               I also recently{' '}
+//               <a href="https://www.newline.co/courses/build-a-spotify-connected-app">
+//                 launched a course
+//               </a>{' '}
+//               that covers everything you need to build a web app with the Spotify API using Node
+//               &amp; React.
+//             </p>
+//  */}
+//             <p>Here are a few technologies I’ve been working with recently:</p>
+//           </div>
+
+//           <ul className="skills-list">
+//             {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
+//           </ul>
+//         </StyledText>
+
+//         <StyledPic>
+//           <div className="wrapper">
+//             <StaticImage
+//               className="img"
+//               src="../../images/me.webp"
+//               width={500}
+//               quality={95}
+//               formats={['AUTO', 'WEBP', 'AVIF']}
+//               alt="Headshot"
+//             />
+//           </div>
+//         </StyledPic>
+//       </div>
+//     </StyledAboutSection>
+//   );
+// };
+
+// export default About;
 import React, { useEffect, useRef } from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
@@ -18,13 +202,25 @@ const StyledAboutSection = styled.section`
     }
   }
 `;
+
 const StyledText = styled.div`
+  
+  /* NEW: Style for the Category Titles */
+  h4.skill-title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: var(--font-mono);
+    font-size: var(--fz-md);
+    color: var(--lightest-slate);
+    font-weight: 600;
+  }
+
   ul.skills-list {
     display: grid;
     grid-template-columns: repeat(2, minmax(140px, 200px));
     grid-gap: 0 10px;
     padding: 0;
-    margin: 20px 0 0 0;
+    margin: 0;
     overflow: hidden;
     list-style: none;
 
@@ -46,6 +242,7 @@ const StyledText = styled.div`
     }
   }
 `;
+
 const StyledPic = styled.div`
   position: relative;
   max-width: 300px;
@@ -125,7 +322,21 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-const skills = ['Python', 'PyTorch', 'Numpy', 'Pandas', 'Matplotlib & Seaborn', 'Git & Linux', "JupyterLab", "Conda & Pip",];
+  // UPDATED: Skills Organized by Category
+  const skillsData = [
+    {
+      category: "Deep Learning & AI",
+      skills: ['PyTorch', 'TensorFlow', 'OpenCV', 'HuggingFace', 'ResNet/CNNs']
+    },
+    {
+      category: "Data Science",
+      skills: ['Pandas', 'NumPy', 'Matplotlib', 'Seaborn', 'Scikit-Learn']
+    },
+    {
+      category: "Languages & Tools",
+      skills: ['Python', 'SQL', 'Git & GitHub', 'Linux / Bash', 'JupyterLab']
+    }
+  ];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -134,34 +345,34 @@ const skills = ['Python', 'PyTorch', 'Numpy', 'Pandas', 'Matplotlib & Seaborn', 
       <div className="inner">
         <StyledText>
           <div>
-        <p>
-          Hello! My name is Arpit, and I enjoy building machine learning systems that can see and understand the world.
-          My interest in machine learning began when I joined <a href="https://www.zohoschools.com/">Zoho School of Advanced Study</a>,
-          where I learned how to build neural networks from scratch and develop strong fundamentals in deep learning.
-        </p>
-
-<p>
-  Over time, I have worked on multiple machine learning models and explored modern deep learning architectures
-  such as ResNet, focusing on understanding their design and optimization challenges.
-  My current focus is on building efficient and accessible machine learning models
-  for real-world applications.
-</p>
-
-            {/* <p>
-              I also recently{' '}
-              <a href="https://www.newline.co/courses/build-a-spotify-connected-app">
-                launched a course
-              </a>{' '}
-              that covers everything you need to build a web app with the Spotify API using Node
-              &amp; React.
+            <p>
+              Hello! I enjoy building machine learning systems that can see and understand the world.
+              My interest in machine learning began when I joined <a href="https://www.zohoschools.com/">Zoho School of Advanced Study</a>,
+              where I learned how to build neural networks from scratch and develop strong fundamentals in deep learning.
             </p>
- */}
-            <p>Here are a few technologies I’ve been working with recently:</p>
+
+            <p>
+              Over time, I have worked on multiple machine learning models and explored modern deep learning architectures
+              such as ResNet, focusing on understanding their design and optimization challenges.
+              My current focus is on building efficient and accessible machine learning models
+              for real-world applications.
+            </p>
+
+            <p>Here are the technologies I work with:</p>
           </div>
 
-          <ul className="skills-list">
-            {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
-          </ul>
+          {/* NEW RENDERING LOOP */}
+          {skillsData.map((group, i) => (
+            <div key={i}>
+              <h4 className="skill-title">{group.category}</h4>
+              <ul className="skills-list">
+                {group.skills.map((skill, j) => (
+                  <li key={j}>{skill}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+
         </StyledText>
 
         <StyledPic>
