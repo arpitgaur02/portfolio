@@ -6,7 +6,7 @@
 
 // const StyledContactSection = styled.section`
 //   max-width: 600px;
-//   margin: 0 auto 100px;
+//   margin: 0 auto 70px;
 //   text-align: center;
 
 //   @media (max-width: 768px) {
@@ -82,11 +82,11 @@ import { usePrefersReducedMotion } from '@hooks';
 
 const StyledContactSection = styled.section`
   max-width: 600px;
-  margin: 0 auto 100px;
+  margin: 0 auto 0px;
   text-align: center;
 
   @media (max-width: 768px) {
-    margin: 0 auto 50px;
+    margin: 0 auto 30px;
   }
 
   .title {
@@ -137,7 +137,7 @@ const Contact = () => {
     <StyledContactSection id="contact" ref={revealContainer}>
       {/* <h2 className="numbered-heading overline">What’s Next?</h2> */}
 
-      <h2 className="title">Get In Touch</h2>
+      {/* <h2 className="title">Get In Touch</h2> */}
 
       <p>
         I am currently looking for new opportunities in AI & Deep Learning. 
