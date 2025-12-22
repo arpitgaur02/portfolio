@@ -139,10 +139,9 @@ const Contact = () => {
 
       {/* <h2 className="title">Get In Touch</h2> */}
 
-      <p>
-        I am currently looking for new opportunities in AI & Deep Learning. 
-        Feel free to reach out to me directly!
-      </p>
+      {/* <p>
+        
+      </p> */}
 
       <div className="contact-details">
         <p>
