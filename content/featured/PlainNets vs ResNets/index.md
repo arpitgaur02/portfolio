@@ -9,6 +9,5 @@ tech:
   - ResNet-20/56
   - PlainNet
   - CIFAR-10
-  - Hugging Face
 ---
 This project reproduces ResNet-20 and ResNet-56 on CIFAR-10 from scratch, benchmarking them against PlainNets to empirically demonstrate the degradation problem, where deeper plain networks underperform due to optimization challenges
