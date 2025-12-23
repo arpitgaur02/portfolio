@@ -1,4 +1,12 @@
 const config = require('./src/config');
+const { ReadableStream } = require('stream/web');
+const { Blob, File } = require('buffer');
+
+global.ReadableStream = ReadableStream;
+global.Blob = Blob;
+global.File = File;
+global.DOMException = global.DOMException || Error; // Add this line!
+
 
 module.exports = {
   siteMetadata: {
@@ -16,7 +24,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sitemap`,
-    `gatsby-plugin-robots-txt`,
+    // `gatsby-plugin-robots-txt`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -29,7 +37,7 @@ module.exports = {
         icon: 'src/images/image.png',
       },
     },
-    `gatsby-plugin-offline`,
+    // `gatsby-plugin-offline`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

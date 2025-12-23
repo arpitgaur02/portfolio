@@ -1,5 +1,5 @@
 module.exports = {
-  email: 'arpit.gaur2006@gmail.com',
+  email: 'arpit.gaur@zohocorp.com',
 
   socialMedia: [
         {
