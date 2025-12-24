@@ -1,8 +1,8 @@
 module.exports = {
-  email: 'arpit.gaur@zohocorp.com',
+  email: 'arpit.gaur@zohocorp.com ',
 
   socialMedia: [
-        {
+    {
       name: 'HuggingFace',
       url: 'https://huggingface.co/arpit-gour02',
     },
@@ -18,7 +18,6 @@ module.exports = {
       name: 'Linkedin',
       url: 'https://www.linkedin.com/in/arpit-gaur-960a40236/',
     },
- 
   ],
 
   navLinks: [
