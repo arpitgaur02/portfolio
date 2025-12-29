@@ -1,6 +1,6 @@
 ---
 date: '2023-11-15'
-title: 'IMDB Movie Recommender'
+title: 'IMDB Movie Review Sentiment Analysis'
 github: 'https://github.com/arpitgaur02/IMDB-Movie-Recommender'
 external: ''
 tech:
