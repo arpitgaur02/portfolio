@@ -7,12 +7,10 @@ global.Blob = Blob;
 global.File = File;
 global.DOMException = global.DOMException || Error; // Add this line!
 
-
 module.exports = {
   siteMetadata: {
     title: 'Arpit Gaur',
-    description:
-      'Arpit | ML Practitioner',
+    description: 'Arpit | ML Practitioner',
     siteUrl: 'https://arpit-gaur.vercel.app/', // No trailing slash allowed!
     image: '/image.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@ArpitGa29210424',
@@ -66,6 +64,14 @@ module.exports = {
         path: `${__dirname}/content/projects`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `featured`,
+        path: `${__dirname}/content/featured`,
+      },
+    },
+
     {
       resolve: `gatsby-transformer-remark`,
       options: {
