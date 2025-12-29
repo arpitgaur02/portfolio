@@ -16,7 +16,7 @@
 date: '2025-12-30'
 title: 'Document Classifier'
 cover: './demo.png'
-data: 'https://huggingface.co/datasets/chainyo/rvl-cdip'
+data: 'https://huggingface.co/arpit-gour02/document-classification#training-data'
 code: 'https://huggingface.co/arpit-gour02/document-classification/blob/main/main.ipynb'
 demo: 'https://huggingface.co/spaces/arpit-gour02/document-classification-demo'
 architecture: 'https://huggingface.co/arpit-gour02/document-classification/blob/main/README.md#model-details'
