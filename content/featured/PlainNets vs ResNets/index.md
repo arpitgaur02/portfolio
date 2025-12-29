@@ -5,7 +5,6 @@ cover: './demo.png'
 data: 'https://www.cs.toronto.edu/~kriz/cifar.html'
 code: 'https://huggingface.co/arpit-gour02/resnet-vs-plainnets-cifar10/blob/main/notebooks/compare%20resnet_plainnets.ipynb'
 architecture: ' '
-external: ' '
 featured: true
 showInProjects: true
 tech:

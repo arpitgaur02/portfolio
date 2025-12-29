@@ -17,9 +17,10 @@ date: '2025-12-30'
 title: 'Document Classifier'
 cover: './demo.png'
 data: 'https://huggingface.co/datasets/chainyo/rvl-cdip'
-github: 'https://huggingface.co/arpit-gour02/document-classification/blob/main/main.ipynb'
-external: 'https://huggingface.co/spaces/arpit-gour02/document-classification-demo'
-architecture: 'https://huggingface.co/arpit-gour02/document-classification/blob/main/aechitecture.png'
+code: 'https://huggingface.co/arpit-gour02/document-classification/blob/main/main.ipynb'
+demo: 'https://huggingface.co/spaces/arpit-gour02/document-classification-demo'
+architecture: 'https://huggingface.co/arpit-gour02/document-classification/blob/main/README.md#model-details'
+results: 'https://huggingface.co/arpit-gour02/document-classification/blob/main/README.md#results'
 
 featured: true
 tech:
@@ -27,6 +28,7 @@ tech:
   - ResNet-50
   - Gradio
   - Hugging Face
+  - Git Xet
 showInProjects: true
 ---
 

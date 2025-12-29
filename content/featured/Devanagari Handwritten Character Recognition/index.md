@@ -3,8 +3,8 @@ date: '2025-12-29'
 title: 'Devanagari Handwritten Character Recognition (DHCD)'
 cover: './demo.png'
 data: 'https://archive.ics.uci.edu/dataset/389/devanagari+handwritten+character+dataset'
-github: 'https://huggingface.co/arpit-gour02/devanagari-character-recognition/blob/main/dhcd.ipynb'
-external: 'https://huggingface.co/spaces/arpit-gour02/dhcd-demo'
+code: 'https://huggingface.co/arpit-gour02/devanagari-character-recognition/blob/main/dhcd.ipynb'
+demo: 'https://huggingface.co/spaces/arpit-gour02/dhcd-demo'
 architecture: ' '
 featured: true
 showInProjects: true
