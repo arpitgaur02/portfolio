@@ -1,8 +1,10 @@
 ---
-date: '2023-11-10'
+date: '2025-11-10'
 title: 'Spotify Customer Churn'
 github: 'https://github.com/arpitgaur02/Spotify-Customer-Churn'
+architecture: ' '
 external: ''
+data: ' '
 tech:
   - Python
   - Pandas

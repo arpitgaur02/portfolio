@@ -1,12 +1,12 @@
 ---
-date: '2023-10-25'
+date: '2025-10-25'
 title: 'Reuters Newswires'
 github: 'https://github.com/arpitgaur02/Reuters-Newswires-Classification'
 external: ''
 tech:
   - Python
-  - Keras
-  - Deep Learning
+  - Seaborn
+  - Sklearn
   - NumPy
 company: ''
 showInProjects: true

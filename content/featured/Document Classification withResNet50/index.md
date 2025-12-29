@@ -13,12 +13,14 @@
 #   - Gradio
 #   - Hugging Face
 #   - Git Xet
-date: '2025-12-15'
+date: '2025-12-30'
 title: 'Document Classifier'
 cover: './demo.png'
 data: 'https://huggingface.co/datasets/chainyo/rvl-cdip'
 github: 'https://huggingface.co/arpit-gour02/document-classification/blob/main/main.ipynb'
 external: 'https://huggingface.co/spaces/arpit-gour02/document-classification-demo'
+architecture: 'https://huggingface.co/arpit-gour02/document-classification/blob/main/aechitecture.png'
+
 featured: true
 tech:
   - PyTorch
