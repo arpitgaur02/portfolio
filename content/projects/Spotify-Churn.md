@@ -1,6 +1,7 @@
 ---
 date: '2025-11-10'
 title: 'Spotify Churn Prediction'
+demo: 'https://huggingface.co/spaces/arpit-gour02/spotify-cust-churn-pred'
 code: 'https://github.com/arpitgaur02/Spotify-Customer-Churn'
 architecture: ''
 results: 'https://github.com/arpitgaur02/Spotify-Customer-Churn?tab=readme-ov-file#-model-evaluation'
