@@ -1,16 +1,15 @@
 ---
 date: '2025-11-10'
-title: 'Spotify Customer Churn'
-github: 'https://github.com/arpitgaur02/Spotify-Customer-Churn'
-architecture: ' '
-external: ''
-data: ' '
+title: 'Spotify Churn Prediction'
+code: 'https://github.com/arpitgaur02/Spotify-Customer-Churn'
+architecture: ''
+results: 'https://github.com/arpitgaur02/Spotify-Customer-Churn?tab=readme-ov-file#-model-evaluation'
+data: 'https://github.com/arpitgaur02/Spotify-Customer-Churn?tab=readme-ov-file#-exploratory-data-analysis-eda'
 tech:
   - Python
   - Pandas
   - Matplotlib
   - Scikit-Learn
-company: ''
 showInProjects: true
 ---
 

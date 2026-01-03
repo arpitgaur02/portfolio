@@ -2,7 +2,7 @@
 date: '2025-12-28'
 title: 'ResNet vs PlainNet'
 cover: './demo.png'
-data: 'https://huggingface.co/arpit-gour02/resnet-vs-plainnets-cifar10/blob/main/README.md#dataset'
+data: 'https://huggingface.co/arpit-gour02/resnet-vs-plainnets-cifar10/blob/main/README.md#key-findings'
 code: 'https://huggingface.co/arpit-gour02/resnet-vs-plainnets-cifar10/blob/main/notebooks/compare%20resnet_plainnets.ipynb'
 architecture: 'https://huggingface.co/arpit-gour02/resnet-vs-plainnets-cifar10/blob/main/README.md#%F0%9F%A7%A0-experiment-summary'
 results: 'https://huggingface.co/arpit-gour02/resnet-vs-plainnets-cifar10/blob/main/README.md#%F0%9F%93%8A-results'

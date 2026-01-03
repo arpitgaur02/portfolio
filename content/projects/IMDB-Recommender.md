@@ -1,17 +1,18 @@
 ---
 date: '2025-12-28'
 title: 'IMDB Movie Review Sentiment Analysis'
-github: 'https://github.com/arpitgaur02/IMDB-Movie-Recommender'
-data: ' '
-architecture: ' '
-external: ''
+demo: 'https://huggingface.co/spaces/arpit-gour02/movie-review-sentiment-analyzer'
+code: 'https://github.com/arpitgaur02/IMDB-Movie-Recommender/blob/main/imdb_nn_model.ipynb'
+data: 'https://github.com/arpitgaur02/IMDB-Movie-Recommender/blob/main/README.md#-dataset-details-imdb-movie-reviews'
+architecture: 'https://github.com/arpitgaur02/IMDB-Movie-Recommender/blob/main/README.md#-model-architecture'
+results: 'https://github.com/arpitgaur02/IMDB-Movie-Recommender/blob/main/README.md#-model-performance--evaluation'
 tech:
   - Python
   - NLP
   - Scikit-Learn
   - Streamlit
-company: ''
 showInProjects: true
 ---
 
-A content-based recommendation engine that suggests movies based on plot keywords, genres, and cast information using cosine similarity.
+A deep learning application that classifies movie reviews as **Positive** or **Negative**.
+This project features a Neural Network built **entirely from scratch using NumPy**.
